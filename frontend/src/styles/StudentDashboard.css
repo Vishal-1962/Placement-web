@@ -1,0 +1,128 @@
+/* src/styles/StudentDashboard.css */
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+.error {
+  color: red;
+}
+
+/* Profile Warning Box */
+.profile-warning {
+  background-color: #fffbe6; /* Light yellow */
+  border: 1px solid #ffe58f;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.profile-warning h3 {
+  color: #d46b08;
+  margin-bottom: 0.5rem;
+}
+
+.profile-warning .complete-profile-btn {
+  background-color: #faad14; /* Gold */
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Company Card */
+.company-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.company-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.company-card.not-eligible {
+  opacity: 0.6;
+  background-color: #f9f9f9;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  color: #2C3E50;
+  margin: 0;
+}
+
+.card-header p {
+  color: #555;
+  margin: 0.25rem 0 0;
+}
+
+.deadline {
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.apply-btn {
+  background-color: #28a745; /* Tech Green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #218838;
+}
+
+.apply-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Tags */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.tag.eligible {
+  background-color: #e6f7ff; /* Light blue */
+  color: #1890ff; /* Blue */
+}
