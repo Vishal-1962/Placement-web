@@ -15,7 +15,7 @@ const LoginPage = () => {
 
   const handleLoginSuccess = (user) => {
     if (!user) return;
-
+    
     if (user.role === 'Student') {
       navigate('/student-dashboard');
     } else if (user.role === 'Faculty') {
